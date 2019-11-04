@@ -1,0 +1,52 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Open source contributions}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {Build system improvements, ELF/Mach-O,COFF manipulation} % Affiliation/role
+    {Mundane, Rust cryptographic library (\url{https://github.com/google/mundane})} % Organization/group
+    {} % Location
+    {2019} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of experience/contributions/knowledge
+        \item {Reimplement listing of exported symbols in object files in Rust, remove dependency on Go from build system.}
+        \item {Replace two-step build process with in-place symbol renaming (ongoing).}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Mach-O, and library archive parser improvements} % Affiliation/role
+    {goblin, Rust object file parsing library (\url{http://github.com/m4b/goblin})} % Organization/group
+    {} % Location
+    {2019} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of experience/contributions/knowledge
+        \item {Prevent parser crashes on certain Mach-O files.}
+        \item {Implement parsing of Windows-specific library archives.}
+        \item {Implement detection of static library archive type.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Improve consistency of array comparison} % Affiliation/role
+    {TestNG, Java testing framework (\url{http://github.com/cbeust/testng})} % Organization/group
+    {} % Location
+    {2015} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of experience/contributions/knowledge
+        \item {Make sure arrays are compared in the same way in all assertions.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\end{cventries}
