@@ -1,4 +1,13 @@
-CC=xelatex
+.DEFAULT_GOAL := cv.pdf
 
-cv.pdf: cv.tex cv/*.tex awesome-cv.cls fontawesome.sty
-	$(CC) $<
+CC=tectonic
+
+Awesome-CV/awesome-cv.cls:
+	git submodule update --init --recursive
+
+cv.pdf: cv.tex cv/*.tex Awesome-CV/awesome-cv.cls
+	$(CC) -Z search-path=Awesome-CV $<
+
+.PHONY: clean
+clean:
+	rm -f cv.pdf
