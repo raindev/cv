@@ -7,6 +7,8 @@ If you're interested in using the same LaTeX template look at https://github.com
 
 ## Produce the PDF
 
-With TeX (e.g. [BasicTeX](https://tug.org/mactex/morepackages.html) on macOS): `make cv.pdf`
+`make` builds `cv.pdf` and, on first run, initializes the Awesome-CV submodule.
 
-With [Tectonic](https://tectonic-typesetting.github.io): `tectonic cv.tex`
+With [Tectonic](https://tectonic-typesetting.github.io) (default): `make`
+
+With [MacTeX](https://tug.org/mactex/) (BasicTeX is insufficient — additional packages are required): `make CC=xelatex`
