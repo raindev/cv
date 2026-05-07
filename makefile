@@ -6,7 +6,7 @@ Awesome-CV/awesome-cv.cls:
 	git submodule update --init --recursive
 
 cv.pdf: cv.tex cv/*.tex Awesome-CV/awesome-cv.cls
-	$(CC) -Z search-path=Awesome-CV $<
+	$(CC) $<
 
 .PHONY: clean
 clean:
