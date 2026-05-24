@@ -1,13 +1,13 @@
-.DEFAULT_GOAL := cv.pdf
+.DEFAULT_GOAL := resume.pdf
 
 CC=tectonic
 
 Awesome-CV/awesome-cv.cls:
 	git submodule update --init --recursive
 
-cv.pdf: cv.tex cv/*.tex Awesome-CV/awesome-cv.cls
+resume.pdf: resume.tex cv/*.tex Awesome-CV/awesome-cv.cls
 	$(CC) $<
 
 .PHONY: clean
 clean:
-	rm -f cv.pdf
+	rm -f resume.pdf
